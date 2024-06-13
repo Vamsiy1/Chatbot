@@ -81,7 +81,7 @@ def main():
     if st.button("Ask"):
         if prompt:
             with st.spinner("Thinking..."):
-                response = converse(prompt)
+                response = converse('You are a dedicated math assistant. Your task is to answer any question related to math with detailed steps. Ensure your answers are precise and do not include any hallucinations. If a question is not related to math, respond with "Please ask anything related to math, I can't answer other domain." Always answer exactly what is asked.' + prompt)
             display_response(response)
         else:
             st.warning("Please enter a prompt.")
