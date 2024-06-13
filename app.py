@@ -19,7 +19,7 @@ print('VALUE OF TOKEN -->',huggingfacehub_api_token)
 
 # Initialize the HuggingFaceEndpoint with the conversation buffer memory
 llm = HuggingFaceEndpoint(
-    repo_id="google/gemma-1.1-7b-it",
+    repo_id="openai-community/gpt2",
     max_new_tokens=1024,
     top_k=10,
     top_p=0.95,
